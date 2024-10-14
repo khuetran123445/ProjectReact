@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 const Carosel = () => {
   return (
     <div>
-      <Carousel data-bs-theme="white">
+      <Carousel data-bs-theme="white" indicators={false}>
         <Carousel.Item>
           <img
             className=" d-block w-100 border-4 rounded-[20px]  "

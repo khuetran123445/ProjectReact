@@ -6,23 +6,23 @@ import CaroselImage from "../../../Catelogy/CaroselImg";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className="body_container h-screen py-7 ">
-        <div className="body_leftRight flex gap-[20px]   ">
-          <div className="body body_left w-[20%] ">
-            <div className="menu_category">
-              <CateloryItem />
-            </div>
-          </div>
-          <div className=" body_image w-[50%] ">
+    <div className="body_container p-3 h-[500px] ">
+      <div className="body_left flex gap-3 ">
+        <div className=" w-[200px]   menu_category   ">
+          <CateloryItem />
+        </div>
+
+        <div className="body_between w-[600px]   flex gap-3 ">
+          <div className="  w-[700px] ">
             <Carosel />
           </div>
-          <div className=" body_right w-[30%] ">
+
+          <div className=" body_right w-[30px] ">
             <CaroselImage />
           </div>
         </div>
-        <div className="body_content w-full bg-yellow-300">conten</div>
       </div>
+      <div className="body_content w-full bg-yellow-300">conten</div>
     </div>
   );
 };
