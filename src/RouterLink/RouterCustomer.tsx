@@ -2,13 +2,33 @@ import { ROUTERS } from "./RouterLink";
 import HomePage from "../pages/users/HomePage";
 import { Route, Routes } from "react-router-dom";
 
-import MasterLayout from "../pages/users/theme/Body";
+import MasterLayout from "../pages/users/theme/Body/MasterLayOut";
 
+import OrderPage from "../pages/users/theme/Body/OrderPage";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import OrderNow from "../pages/users/theme/Body/OrderNow";
+const queryClient = new QueryClient();
 const renderUserRourter = () => {
   const userRouter = [
     {
       path: ROUTERS.Link.HOME,
       Component: <HomePage />,
+    },
+    {
+      path: ROUTERS.LinkOrderPage.OrderPage,
+      Component: (
+        <QueryClientProvider client={queryClient}>
+          <OrderPage />
+        </QueryClientProvider>
+      ),
+    },
+    {
+      path: ROUTERS.LinkOrderNow.OrderNow,
+      Component: (
+        <QueryClientProvider client={queryClient}>
+          <OrderNow />
+        </QueryClientProvider>
+      ),
     },
   ];
   return (

@@ -10,7 +10,7 @@ const Image = ({ image }: { image: string }) => {
 
 const CaroselImage = () => {
   return (
-    <div className="w-[180px] h-[90px] ">
+    <div className="flex ">
       <Image image="https://images.pexels.com/photos/1693627/pexels-photo-1693627.jpeg?auto=compress&cs=tinysrgb&w=600" />
       <Image image="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-110924-060849.jpg" />
     </div>

@@ -8,7 +8,7 @@
 
 .container {
   max-width: 1200px;
-  width: 100%;
+  width: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
@@ -78,12 +78,12 @@
 .absolute {
   position: absolute;
   width: 700px;
-  height: 370px;
+  height: 400px;
   background-color: #eaecf0;
   z-index: 2;
   display: none;
   top: 0;
-  left: 180px;
+  left: 130px;
   border-radius: 10px;
   margin-left: 20px;
   padding: 5px 20px;
@@ -100,6 +100,96 @@
 }
 
 .CateloryItemColor:hover {
-  background-color: #ececec;
   color: red;
+}
+
+.Item {
+  border: 5px solid #a22723;
+  background-color: #a22723;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  .Texts {
+    color: #fd9e26;
+  }
+  .Card {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .CardItem {
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    display: block;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .CardItem:hover {
+    color: red;
+    transform: translateY(-5px) scale(1.03);
+  }
+}
+
+.Footer {
+  background-color: #eaecf0;
+  display: inline-block;
+  width: 300px;
+}
+.Footer:hover {
+  color: blue;
+  cursor: pointer;
+}
+.Head {
+  background: linear-gradient(270deg, #434343, #000);
+  border-radius: 12px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  margin: 10px 10px;
+  max-width: 244px;
+  padding: 05px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+.OrderProcess {
+  width: 224px;
+  height: 278px;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.102),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+  background: #fff;
+  display: inline-block;
+  margin: 10px;
+
+  .title {
+    height: 30px;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    max-height: 55px;
+    padding: 0 0 5px;
+  }
+  .Button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px solid white;
+    padding: 10px 0px;
+    background-color: #f1f8fe;
+    color: #2a83e9;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
 }

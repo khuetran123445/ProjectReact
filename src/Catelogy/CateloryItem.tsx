@@ -128,9 +128,9 @@ const CateloryItem = () => {
       {arrs.length > 0 &&
         arrs.map((arr) => {
           return (
-            <div className="cat_item">
+            <div className="cat_item" key={arr.id}>
               <Link to={`/khue/${arr.id}`}>
-                <Item key={arr.id} name={arr.name} icon={arr.icon} />
+                <Item name={arr.name} icon={arr.icon} />
               </Link>
               {arr?.child && arr?.child.length > 0 && (
                 <CateloryItemChill child={arr.child || []} />

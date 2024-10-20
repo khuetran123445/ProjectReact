@@ -1,6 +1,13 @@
 export const ROUTERS = {
   Link: {
     HOME: "",
-    PAGE: "/k",
+  },
+
+  LinkOrderPage: {
+    OrderPage: "/OrderPage",
+  },
+
+  LinkOrderNow: {
+    OrderNow: "/OrderNow/:id",
   },
 };
